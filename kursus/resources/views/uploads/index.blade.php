@@ -3,12 +3,12 @@
 @section('content')
     <div class="row">
         <div class="medium-12 large-12 columns">
-            <h4>Messages</h4>
-            <div class="medium-2  columns"><a class="button hollow success" href="{{ route('new_message') }}">SEND NEW MESSAGE</a></div>
+            <h4>Upload documents</h4>
+            <div class="medium-2  columns"><a class="button hollow success" href="{{ route('new_upload') }}">NEW UPLOAD</a></div>
             <br />
         </div>
         <div class="medium-12 large-12 columns">
-            <h4>Previous messages</h4>
+            <h4>Previous uploads</h4>
             <table>
                 <thead>
                 <tr>
@@ -21,8 +21,8 @@
 
                 <! -- @ foreach( $programs as $program ) -->
                     <tr>
-                        <td> Morten Schrøder Olsen (hard codet) </td>
-                        <td> 01.10.2018</td>
+                        <td> Group Network </td>
+                        <td> 01.08.2018</td>
                         <td>
                             <a class="hollow button" href="">DELETE</a>
                         </td>

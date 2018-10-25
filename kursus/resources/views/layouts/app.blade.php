@@ -2,7 +2,7 @@
 <html data-whatinput="keyboard" data-whatintent="keyboard" class=" whatinput-types-initial whatinput-types-keyboard"><head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
-    <title>Landon Hotel App</title>
+    <title>The System - programs</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="{{ asset('css/foundation.css') }}">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
@@ -20,6 +20,10 @@
                 <li role="menuitem"><a href="{{ route('clients') }}">Clients</a></li>
                 <li role="menuitem"><a href="{{ route('programs') }}">Programs</a></li>
                 <li role="menuitem"><a href="{{ route('messages') }}">Send message</a> </li>
+                <li role="menuitem"><a href="{{ route('groups') }}">Groups</a> </li>
+                <li role="menuitem"><a href="{{ route('activities') }}">Activity log</a></li>
+                <li role="menuitem"><a href="{{ route('uploads') }}">Upload</a></li>
+                <li role="menuitem"><a href="{{ route('invoices') }}">Invoices</a></li>
             </ul>
         </div>
     </div>
