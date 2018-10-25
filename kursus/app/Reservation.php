@@ -4,6 +4,13 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class Reservation
+ * @package App
+ *
+ * A Reservation is a client joining a program
+ *
+ */
 class Reservation extends Model
 {
     //
@@ -12,8 +19,8 @@ class Reservation extends Model
         return $this->belongsTo('App\Client', 'client_id', 'id');
     }
 
-    public function room()
+    public function program()
     {
-        return $this->belongsTo('App\Room', 'room_id', 'id');
+        return $this->belongsTo('App\Program', 'room_id', 'id');
     }
 }

@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use App\Client as Client;
-use App\Room as Room;
+use App\Program as Room;
 use App\Reservation as Reservation;
 
 use Illuminate\Http\Request;
@@ -13,14 +13,14 @@ class ReservationsController extends Controller
     {
         $reservation = new Reservation();
         $client_instance = new Client();
-        $room_instance = new Room();
+        $room_instance = new Course();
 
         $client = $client_instance->find($client_id);
         $room = $room_instance->find($room_id);
         $reservation->date_in = $date_in;
         $reservation->date_out = $date_out;
 
-        $reservation->room()->associate($room);
+        $reservation->program()->associate($room);
         $reservation->client()->associate($client);
         if( $room_instance->isRoomBooked( $room_id, $date_in, $date_out ) )
         {

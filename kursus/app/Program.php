@@ -5,10 +5,16 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class Room extends Model
+/**
+ * Class Program
+ * @package App
+ * A Program is a term for a planned number of i.e. meetings, events and education
+ *
+ */
+class Program extends Model
 {
     //
-    public function getAvailablerooms($start_date, $end_date)
+    public function getAvailablePrograms($start_date, $end_date)
     {
         $available_rooms = DB::table('rooms as r')
                                     ->select('r.id', 'r.name')

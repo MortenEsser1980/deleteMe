@@ -11,7 +11,12 @@
 |
 */
 
+//Route syntax == get('URL path', 'ControllerName'@'methodName in Controller')->name('route name to be referred as)
 Route::get('/', 'ContentsController@home')->name('home');
+Route::get('/programs', 'ContentsController@programs')->name('programs');
+Route::get('/programs/new', 'ProgramController@newProgram')->name('new_program');
+Route::get('/messages', 'MessageController@show')->name('messages');
+Route::get('/messages/new', 'MessageController@newMessage')->name('new_message');
 Route::get('/clients', 'ClientController@index')->name('clients');
 Route::get('/clients/new', 'ClientController@newClient')->name('new_client');
 Route::post('/clients/new', 'ClientController@newClient')->name('create_client');
